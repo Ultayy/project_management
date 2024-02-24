@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: project_m
+    environment:
+      POSTGRES_PASSWORD: 00000000
+      POSTGRES_USERNAME: postgres
+      POSTGRES_DB: project_management
+
+    ports:
+      - "5332:5432"

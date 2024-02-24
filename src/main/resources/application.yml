@@ -1,0 +1,22 @@
+server:
+  port: 9595
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5332/project_management
+    password: 00000000
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  main:
+    web-application-type: servlet
